@@ -1,0 +1,62 @@
+{
+  "name": "CLOWN-MD",
+  "description": "🔥 CLOWN-MD - Fastest WhatsApp Bot by CLOWN | Multi-Device | Powered by KAVIDU DILAKSHANA",
+  "logo": "https://i.ibb.co/xyz/your-clown-logo.jpg",
+  "keywords": ["whatsapp bot", "clown-md", "md bot", "whatsapp md", "bot", "multi-device", "clown"],
+  "success_url": "/",
+  "website": "https://whatsapp.com/channel/0029VbDr58YDJ6H481jeJ83n",
+  "repository": "https://github.com/YOUR_USERNAME/CLOWN-MD",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "⚠️ CLOWN-MD Session ID - Get from pairing site",
+      "required": true,
+      "value": ""
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner Number with country code (ex: 9478xxxxxxx)",
+      "required": false,
+      "value": "94789123880"
+    },
+    "PREFIX": {
+      "description": "Bot Prefix ( . , ! , # )",
+      "required": false,
+      "value": "."
+    },
+    "MODE": {
+      "description": "Bot Mode: public / private / groups / inbox",
+      "required": false,
+      "value": "public"
+    },
+    "ALIVE_IMG": {
+      "description": "CLOWN-MD Alive Image/Video URL",
+      "required": false,
+      "value": "https://i.ibb.co/xyz/clown-alive.mp4"
+    },
+    "ALIVE_MSG": {
+      "description": "CLOWN-MD Alive Message",
+      "required": false,
+      "value": "🤡 CLOWN-MD IS ALIVE!\\n\\n> POWERED by CLOWN-MD"
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Auto Read Status (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "AUTO_REACT": {
+      "description": "Auto React (true/false)",
+      "required": false,
+      "value": "false"
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-ffmpeg.git"
+    }
+  ],
+  "stack": "heroku-24"
+}
